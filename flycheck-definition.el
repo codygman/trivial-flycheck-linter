@@ -6,5 +6,5 @@
 (flycheck-define-checker hello-linter
   "The most trivial hello world linter I could think up"
   :command ("hello-linter" source-original)
-  :error-patterns ((error line-start (and not-newline) line-end))
+  :error-patterns ((error line-start (message not-newline) line-end))
   :modes (json-mode))
