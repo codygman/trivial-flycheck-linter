@@ -16,4 +16,12 @@ The rx regex I'm attempting to match this with is:
 
 Not working. For some reason my [rx](https://www.emacswiki.org/emacs/rx) regex is not matching.
 
+In rx, this regex does match the line:
+
+```
+'(and not-newline)
+```
+
+It was my understanding that `and not-newline` == `message not-newline`. Even if not, I have tried both with flycheck-compile and they both fail to highlight (colorize? Been a while since I had a working checker) the error output.
+
 TODO: See what the generated regex is using edebug.
